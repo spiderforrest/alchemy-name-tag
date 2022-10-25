@@ -1,11 +1,22 @@
-/* Imports */
+const nameDisplay = document.getElementById('name');
+console.log('nameDisplay', nameDisplay);
 
-/* Get DOM Elements */
+nameDisplay.textContent = 'Spider';
 
-/* State */
+const button = document.getElementById('button');
+button.addEventListener('click', () => {
+    console.log('button clicked');
+    const inputBox = document.getElementById('input-box');
+    nameDisplay.textContent = inputBox.value;
+});
 
-/* Events */
+const colorDropdown = document.getElementById('color-select');
+colorDropdown.addEventListener('change', () => {
+    console.log('color selected: ' + colorDropdown.value);
 
-/* Display Functions */
+    nameDisplay.classList.remove('rebeccapurple');
+    nameDisplay.classList.remove('blue');
+    nameDisplay.classList.remove('goldenrod');
 
-// (don't forget to call any display functions you want to run on page load!)
+    nameDisplay.classList.add(colorDropdown.value);
+});
