@@ -33,3 +33,15 @@ header .logo {
 main {
     padding: 20px;
 }
+
+.red {
+    color: red;
+}
+
+.blue {
+    color: blue;
+}
+
+.goldenrod {
+    color: goldenrod;
+}
