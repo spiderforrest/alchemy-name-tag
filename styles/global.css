@@ -32,6 +32,9 @@ header .logo {
 
 main {
     padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .red {
@@ -54,4 +57,16 @@ main {
 }
 .goldenrod {
     color: goldenrod;
+}
+
+#name-input {
+    margin: 30px;
+}
+
+#name-box {
+    border: solid 1px black;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }

@@ -29,20 +29,27 @@
         </header>
 
         <main>
-            <section>
+            <section id="name-input">
                 <label>Name: <input id="input-box" type="text" /></label>
                 <button id="button">Submit</button>
+                <label for="text-color">Text Color:</label>
                 <select id="color-select">
+                    <option value="rebeccapurple">rebeccapurple</option>
+                    <option value="blue">blue</option>
+                    <option value="goldenrod">goldenrod</option>
+                </select>
+                <label for="background-color">Background Color:</label>
+                <select id="background-select">
                     <option value="rebeccapurple">rebeccapurple</option>
                     <option value="blue">blue</option>
                     <option value="goldenrod">goldenrod</option>
                 </select>
             </section>
 
-            <section>
+            <section id="name-box">
                 <h2>Hello!</h2>
                 <p>My name is:</p>
-                <p id="name">Bren</p>
+                <p id="name"></p>
             </section>
         </main>
     </body>
