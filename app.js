@@ -1,22 +1,11 @@
-const nameDisplay = document.getElementById('name');
-console.log('nameDisplay', nameDisplay);
+/* Imports */
 
-nameDisplay.textContent = 'Spider';
+/* Get DOM Elements */
 
-const button = document.getElementById('button');
-button.addEventListener('click', () => {
-    console.log('button clicked');
-    const inputBox = document.getElementById('input-box');
-    nameDisplay.textContent = inputBox.value;
-});
+/* State */
 
-const colorDropdown = document.getElementById('color-select');
-colorDropdown.addEventListener('change', () => {
-    console.log('color selected: ' + colorDropdown.value);
+/* Events */
 
-    nameDisplay.classList.remove('rebeccapurple');
-    nameDisplay.classList.remove('blue');
-    nameDisplay.classList.remove('goldenrod');
+/* Display Functions */
 
-    nameDisplay.classList.add(colorDropdown.value);
-});
+// (don't forget to call any display functions you want to run on page load!)
