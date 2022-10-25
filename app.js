@@ -1,4 +1,5 @@
 const nameDisplay = document.getElementById('name');
+const nametag = document.getElementById('name-box');
 console.log('nameDisplay', nameDisplay);
 
 nameDisplay.textContent = 'John Doe';
@@ -26,9 +27,9 @@ const backgroundDropdown = document.getElementById('background-select');
 backgroundDropdown.addEventListener('change', () => {
     console.log('color selected: ' + backgroundDropdown.value);
 
-    nameDisplay.classList.remove('rebeccapurple');
-    nameDisplay.classList.remove('blue');
-    nameDisplay.classList.remove('goldenrod');
+    nametag.classList.remove('rebeccapurpleBG');
+    nametag.classList.remove('blueBG');
+    nametag.classList.remove('goldenrodBG');
 
-    nameDisplay.classList.add(backgroundDropdown.value);
+    nametag.classList.add(backgroundDropdown.value);
 });
